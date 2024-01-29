@@ -19,20 +19,20 @@
                 <button class="btn btn-secondary" type="button" id="button-addon1" onclick="weather()"> <i class="fa fa-search"></i> </button>
             </div>
             <div class="weather text-center text-white">
-                <img src="images/clear.png" alt="" id="Weathericon">
+                <img src="clear.png" alt="" id="Weathericon">
                 <h1 class="temp mx-5"> </h1>
                 <h2 class="city mx-5"></h2>
             </div>
             <div class="details d-flex flex-row mt-5">
                 <div class="col text-center text-white mt-2">
-                    <img src="images/humidity.png" alt="">
+                    <img src="humidity.png" alt="">
                     <div>
                         <p class="humidity lead fw-bold"></p>
                         <p class="lead fw-bold">Humidity</p>
                     </div>
                 </div>
                 <div class="col text-center text-white">
-                    <img src="images/wind.png" alt="">
+                    <img src="wind.png" alt="">
                     <div>
                         <p class="wind lead fw-bold"></p>
                         <p class="lead fw-bold">Wind speed</p>
@@ -65,17 +65,17 @@
                     document.querySelector(".wind").innerHTML = data.wind.speed + `km/hr`;
 
                     if (data.weather[0].main == "Clouds") {
-                        icon.src = "images/clouds.png"
+                        icon.src = "clouds.png"
                     } else if (data.weather[0].main == "Clear") {
-                        icon.src = "images/clear.png"
+                        icon.src = "clear.png"
                     } else if (data.weather[0].main == "Rain") {
-                        icon.src = "images/rain.png"
+                        icon.src = "rain.png"
                     } else if (data.weather[0].main == "Drizzle") {
-                        icon.src = "images/drizzle.png"
+                        icon.src = "drizzle.png"
                     } else if (data.weather[0].main == "Mist") {
-                        icon.src = "images/mist.png"
+                        icon.src = "mist.png"
                     } else if (data.weather[0].main == "Snow") {
-                        icon.src = "images/snow.png"
+                        icon.src = "snow.png"
                     }
                 }
 
